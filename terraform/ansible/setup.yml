@@ -1,0 +1,9 @@
+- name: Setup server
+  hosts: localhost
+
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+      become: true
